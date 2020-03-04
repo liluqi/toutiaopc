@@ -35,10 +35,10 @@ export default {
   },
   //   组件实例化完成之后,发送请求,获取用户信息
   created () {
-    const token = window.localStorage.getItem('user-login')
+    // const token = window.localStorage.getItem('user-login')
     this.$axios({
-      url: '/user/profile',
-      headers: { Authorization: `Bearer ${token}` }
+      url: '/user/profile'
+      // headers: { Authorization: `Bearer ${token}` }
       //   method: 'get'
     }).then(res => {
       console.log(res)
