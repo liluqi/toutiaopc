@@ -27,6 +27,7 @@
 </template>
 
 <script>
+
 export default {
   data () {
     return {
@@ -77,7 +78,7 @@ export default {
           method: 'post'
         }).then(res => {
         //   console.log(res)
-          window.localStorage.setItem('user-login', res.data.data.token)
+          window.localStorage.setItem('user-login', res.data.token)
           this.$router.push('/home')
         }).catch(() => {
           this.$message({

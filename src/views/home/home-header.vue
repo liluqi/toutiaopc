@@ -42,7 +42,7 @@ export default {
       //   method: 'get'
     }).then(res => {
       console.log(res)
-      this.userInfo = res.data.data
+      this.userInfo = res.data
     })
   },
   methods: {

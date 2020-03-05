@@ -12,6 +12,20 @@ Vue.prototype.$axios = axios
 
 Vue.config.productionTip = false
 
+// 导航守卫
+router.beforeEach(function (to, from, next) {
+  if (to.path.startsWith('/home')) {
+    const token = window.localStorage.getItem('user-login')
+    if (token) {
+      next()
+    } else {
+      next('/login')
+    }
+  } else {
+    next()
+  }
+})
+
 new Vue({
   router,
   render: h => h(App)
