@@ -22,7 +22,7 @@ const routes = [
       }, {
         path: 'comment',
         name: 'Comment',
-        component: () => import('../views/main/commend')
+        component: () => import('../views/main/comment')
       }
     ]
 
