@@ -6,7 +6,7 @@
           <img src="./../../assets/img/logo_admin.png" alt="">
     </div>
 
-    <el-menu router background-color="#353b4e" text-color="#adafb5">
+    <el-menu router background-color="rgb(82, 113, 167)" text-color="#adafb5">
         <!-- 普通导航-首页 -->
         <el-menu-item index="/home">
             <i class="el-icon-s-home"></i>
@@ -55,12 +55,15 @@ export default {
 
 <style lang="less" scoped>
 .home-asider {
-    background-color: #323745;
+    background-color: rgb(82, 113, 167);
     width: 230px;
     height: 100vh;
     .title {
-        background-color: #2e2f32;
-        text-align: center;
+        background-color: rgb(82, 113, 167);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
     }
     .el-menu {
         border-right: none;

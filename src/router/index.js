@@ -23,6 +23,18 @@ const routes = [
         path: 'comment',
         name: 'Comment',
         component: () => import('../views/main/comment')
+      }, {
+        path: 'material',
+        name: 'Material',
+        component: () => import('../views/main/material')
+      }, {
+        path: 'articles',
+        name: 'Articles',
+        component: () => import('../views/main/article-list')
+      }, {
+        path: 'publish/:articleid?',
+        name: 'Publish',
+        component: () => import('../views/main/add-article')
       }
     ]
 

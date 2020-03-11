@@ -64,6 +64,9 @@ export default {
 
 <style lang="less" scoped>
 .home-header {
+      padding: 0;
+      margin: 0;
+      background-color: rgba(0,0,0, .2);
       height: 60px;
       .left {
           i {
@@ -72,6 +75,7 @@ export default {
           }
       }
       .right {
+        margin-right: 20px;
           img {
               width: 40px;
               height: 40px;
